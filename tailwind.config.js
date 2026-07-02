@@ -4,7 +4,8 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     content: ["./*.html", "./*.js"],
-    darkMode: "media",
+    // Light mode forcé : darkMode "class" + aucune classe .dark sur <html> => tous les dark: sont neutralisés.
+    darkMode: "class",
     safelist: ["isToggled"],
     theme: {
         fontFamily: {
